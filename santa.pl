@@ -8,7 +8,7 @@ use List::Util qw( shuffle );
 
 my @pool = ();
 
-open my $input, "<$ARGV[0]" or die "nope";
+open my $input, '<', $ARGV[0] or die "nope";
 
 while (my $line = <$input>) {
 	# Skip commented out lines.
